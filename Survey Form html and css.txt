@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <style>
+    body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 1px solid blue;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid gold;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #33e878;
+  color: white;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Survey Form</h1>
+    <p>Thank you for taking the time to help us improve our product.</p>
+  </header>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age">
+    </fieldset>
+    <fieldset>
+      <label>Would you recommend our product to a friend?</label>
+      <input type="radio" name="recommend" value="Yes"> Yes
+      <input type="radio" name="recommend" value="No"> No
+    </fieldset>
+    <fieldset>
+      <label>What would you like to see improved?</label>
+      <input type="checkbox" name="improvements" value="More features"> More features
+      <input type="checkbox" name="improvements" value="Better design"> Better design
+      <input type="checkbox" name="improvements" value="Other"> Other (please specify)
+    </fieldset>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
